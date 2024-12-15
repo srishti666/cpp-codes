@@ -5,6 +5,7 @@
         "deque": "cpp",
         "string": "cpp",
         "vector": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "ostream": "cpp"
     }
 }

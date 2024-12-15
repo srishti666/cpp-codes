@@ -2,6 +2,7 @@
 #include<vector>
 #include<list>
 #include<set>
+#include<map>
 #include<forward_list>
 
 using namespace std;
@@ -27,11 +28,11 @@ int main(){
     //     cout<<x<<endl; 
 
 //linked list
-    list<int> v={2,4,6,8,10};
-     v.push_back(20);
-     v.push_back(30);
+    // list<int> v={2,4,6,8,10};
+    //  v.push_back(20);
+    //  v.push_back(30);
 
-    list<int>::iterator itr;
+    // list<int>::iterator itr;
 
     //forward list
     forward_list<int> f={2,4,6,8,10};
@@ -39,8 +40,35 @@ int main(){
      f.push_front(30);
 
      //set
-     list<int> v={2,4,6,8,10};
-     v.push_back(20);
-     v.push_back(30);
+    //  set<int> v={2,4,6,8,10,10}; //no duplicatde elements
+    //  v.insert(20);
+    //  v.insert(30);
+
+    // map<int, string> m;
+    // m.insert(pair<int,string> (1,"srishti"));
+    // m.insert(pair<int,string> (2,"astha"));
+    // m.insert(pair<int,string> (3,"lily"));
+
+    // map<int, string>::iterator itr;
+    // for(itr=m.begin();itr!=m.end();itr++){
+    //     cout<<itr->first<<" "<<itr->second<<endl;
+    // }
+
+    // map<int, string> :: iterator itr1;
+    // itr1= m.find(2);
+    // cout<<itr1->first<<" "<<itr->second<<endl;
+
+    map<int,string> m;
+    m.insert(pair<int,string>(1,"srishti"));
+    m.insert(pair<int,string>(2,"astha"));
+    m.insert(pair<int,string>(3,"lily"));
+
+    map<int, string>::iterator itr;
+    for(itr=m.begin();itr!=m.end();itr++){
+        cout<<itr->first<<". "<<itr->second<<endl;
+    }
+    
+
+
 }
 
